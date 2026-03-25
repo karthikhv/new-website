@@ -1,0 +1,12 @@
+1:"$Sreact.fragment"
+2:I[62319,["/new-website/_next/static/chunks/0dbhjjzl8qfwv.js","/new-website/_next/static/chunks/0ii8_js2xlo0d.js","/new-website/_next/static/chunks/0pk6~mw-benag.js"],"default"]
+3:I[92349,["/new-website/_next/static/chunks/0dbhjjzl8qfwv.js","/new-website/_next/static/chunks/0ii8_js2xlo0d.js","/new-website/_next/static/chunks/0pk6~mw-benag.js"],"default"]
+4:I[79356,["/new-website/_next/static/chunks/0dbhjjzl8qfwv.js","/new-website/_next/static/chunks/0ii8_js2xlo0d.js","/new-website/_next/static/chunks/0pk6~mw-benag.js"],"default"]
+5:I[8128,["/new-website/_next/static/chunks/0dbhjjzl8qfwv.js","/new-website/_next/static/chunks/0ii8_js2xlo0d.js","/new-website/_next/static/chunks/0pk6~mw-benag.js"],"default"]
+6:I[78369,["/new-website/_next/static/chunks/0dbhjjzl8qfwv.js","/new-website/_next/static/chunks/0ii8_js2xlo0d.js","/new-website/_next/static/chunks/0pk6~mw-benag.js"],"default"]
+7:I[44413,["/new-website/_next/static/chunks/0dbhjjzl8qfwv.js","/new-website/_next/static/chunks/0ii8_js2xlo0d.js","/new-website/_next/static/chunks/0pk6~mw-benag.js"],"default"]
+8:I[63971,["/new-website/_next/static/chunks/0dbhjjzl8qfwv.js","/new-website/_next/static/chunks/0ii8_js2xlo0d.js","/new-website/_next/static/chunks/0pk6~mw-benag.js"],"default"]
+9:I[97367,["/new-website/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-[#0B0F19]","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","footer",null,{"className":"py-10 px-6 border-t border-white/[0.06]","children":["$","div",null,{"className":"max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4","children":[["$","p",null,{"className":"text-xs text-white/20 tracking-wide","children":["© ",2026," Karthik HV. All rights reserved."]}],["$","p",null,{"className":"text-xs text-white/15","children":"Built with Next.js · Berlin"}]]}]}]]}],[["$","script","script-0",{"src":"/new-website/_next/static/chunks/0ii8_js2xlo0d.js","async":true}],["$","script","script-1",{"src":"/new-website/_next/static/chunks/0pk6~mw-benag.js","async":true}]],["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BzvRStmjuYvdEC_MiHUkT"}
+b:null
