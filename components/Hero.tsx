@@ -28,54 +28,49 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          initial={{ y: 6 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="text-xs tracking-[0.3em] uppercase text-[#A3FF12] mb-6 font-medium"
         >
           Berlin · Data Engineer
         </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.35 }}
+          initial={{ y: 14 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="text-[clamp(3rem,10vw,7rem)] font-bold tracking-tight leading-[1.02] text-white mb-6"
         >
           Karthik HV
         </motion.h1>
 
         <motion.h2
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
+          initial={{ y: 14 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
           className="text-[clamp(1.1rem,3.5vw,1.9rem)] font-light text-white/70 mb-8 tracking-tight"
         >
           Building Scalable Data Systems
         </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.65 }}
+          initial={{ y: 10 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           className="text-base text-white/40 max-w-lg mx-auto leading-relaxed"
         >
           Data pipelines, real-time systems, and analytics at scale.
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
-          className="mt-14 flex items-center justify-center gap-6"
-        >
+        <div className="mt-14 flex items-center justify-center gap-6">
           <a
             href="#about"
             className="text-sm text-white/40 hover:text-white transition-colors duration-300 tracking-wide"
           >
             Explore ↓
           </a>
-        </motion.div>
+        </div>
       </div>
 
       {/* Bottom fade */}

@@ -4,24 +4,21 @@ import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-function Particles({ count = 120 }: { count?: number }) {
-  const ref = useRef<THREE.Points>(null);
-
-  // Compute positions once using a stable ref (avoids useMemo purity lint)
-  const positionsRef = useRef<Float32Array | null>(null);
-  if (positionsRef.current === null) {
-    const arr = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      // eslint-disable-next-line react-hooks/purity
-      arr[i * 3] = (Math.random() - 0.5) * 18;
-      // eslint-disable-next-line react-hooks/purity
-      arr[i * 3 + 1] = (Math.random() - 0.5) * 18;
-      // eslint-disable-next-line react-hooks/purity
-      arr[i * 3 + 2] = (Math.random() - 0.5) * 8;
-    }
-    positionsRef.current = arr;
+// Pre-compute positions once at module load time (avoids random values inside render)
+function generatePositions(count: number): Float32Array {
+  const arr = new Float32Array(count * 3);
+  for (let i = 0; i < count; i++) {
+    arr[i * 3] = (Math.random() - 0.5) * 18;
+    arr[i * 3 + 1] = (Math.random() - 0.5) * 18;
+    arr[i * 3 + 2] = (Math.random() - 0.5) * 8;
   }
-  const positions = positionsRef.current;
+  return arr;
+}
+
+const PARTICLE_POSITIONS = generatePositions(120);
+
+function Particles() {
+  const ref = useRef<THREE.Points>(null);
 
   useFrame(({ clock }) => {
     if (ref.current) {
@@ -35,7 +32,7 @@ function Particles({ count = 120 }: { count?: number }) {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
-          args={[positions, 3]}
+          args={[PARTICLE_POSITIONS, 3]}
         />
       </bufferGeometry>
       <pointsMaterial
